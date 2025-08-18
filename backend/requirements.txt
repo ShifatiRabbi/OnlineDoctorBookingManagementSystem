@@ -1,0 +1,36 @@
+# Core
+Django>=5.0,<5.3
+djangorestframework>=3.15.0
+django-filter>=24.2
+drf-spectacular>=0.27.0
+djangorestframework-simplejwt>=5.3.1
+django-cors-headers>=4.4.0
+
+# Async & Realtime
+channels>=4.1.0
+channels-redis>=4.2.0
+daphne>=4.1.0
+
+# Tasks & Cache
+celery>=5.4.0
+redis>=5.0.0
+
+# DB
+psycopg2-binary>=2.9,<3.0
+django-environ>=0.11.2
+
+# Observability
+structlog>=24.1.0
+sentry-sdk>=2.0.0
+
+# Dev/Test
+pytest>=8.2.0
+pytest-django>=4.8.0
+factory-boy>=3.3.0
+black>=24.3.0
+ruff>=0.5.0
+mypy>=1.10.0
+
+# Optional (PDF/Export) — enable later if needed on Windows
+# WeasyPrint>=62.0
+# xhtml2pdf>=0.2.16

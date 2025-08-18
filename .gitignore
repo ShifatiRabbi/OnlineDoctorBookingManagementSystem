@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+db.sqlite3
+
+# Django static/media
+staticfiles/
+media/
+
+# Node
+node_modules/
+.next/
+out/
+dist/
+coverage/
+*.log
+
+# OS/Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Misc
+*.local
+*.tmp
+*.bak
