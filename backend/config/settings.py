@@ -121,7 +121,9 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # CORS
-CORS_ALLOWED_ORIGINS = config("CORS_ALLOWED_ORIGINS", default="", cast=Csv())
-
+CORS_ALLOWED_ORIGINS = config( "CORS_ALLOWED_ORIGINS", default="http://localhost:3000", cast=Csv() )
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:3000"
+]
 # Sentry
 SENTRY_DSN = config("SENTRY_DSN", default="")

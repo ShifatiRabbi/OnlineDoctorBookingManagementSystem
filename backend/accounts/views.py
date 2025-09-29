@@ -6,6 +6,9 @@ from .services import create_user_service, update_user_service, delete_user_serv
 from .models import User
 import json
 
+def test_api(request):
+    return JsonResponse({"message": "Backend is working!"})
+
 @api_view(['POST'])
 @permission_classes([IsAuthenticated, IsAdminUser])
 def create_user(request):
